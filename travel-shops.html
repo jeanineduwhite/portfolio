@@ -4,22 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Travel Shops collections · Jeanine White</title>
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrap">
     <header>
-      <a class="mark" href="../index.html">Jeanine White</a>
+      <a class="mark" href="index.html"><em>Jeanine</em> <span>White</span></a>
       <nav>
-        <a href="../writing.html">Writing</a>
-        <a href="mailto:jeanineunpingco@outlook.com">Email</a>
+        <a href="writing.html">Writing</a>
+        <a href="resume.html">Resume</a>
       </nav>
     </header>
 
     <h1>Travel Shops collections</h1>
     <p class="meta">Expedia · Content Designer II · 2022–2025</p>
+
+    <p>Product UI for a two-sided travel experience with content systems for one vocabulary with many states, and judgment for when to be short and when to explain the consequence.</p>
     <p><strong>What I owned:</strong> UI content for creating, saving, managing, and sharing collections: labels, helper text, errors, empty states, and confirmations across desktop and iOS.</p>
-    <p>Travel Shops are shoppable storefronts. Creators (and later, anyone) save stays into collections travelers can book. The content problem was not “make it sound fun.” It was three overlapping save models (Shop, collection, trip), two audiences, and a long tail of failure states.</p>
+    <p><strong>The product:</strong> Travel Shops are shoppable storefronts. Creators (and later, anyone) save stays into collections travelers can book. The content problem was not “make it sound fun.” It was three overlapping save models (Shop, collection, trip), two audiences, and a long tail of failure states.</p>
 
     <h2>The job of the language</h2>
     <p>A collection is a <strong>shoppable list</strong>, not a wishlist and not a trip. If the UI said “save” everywhere, people would not know <em>where</em> the stay went or <em>who</em> could see it.</p>
@@ -31,6 +33,16 @@
     </ul>
     <p>Create-collection helper: <strong>Add stays to a shoppable list.</strong><br>
     Property description prompt: <strong>Tell everyone why you love this property.</strong></p>
+    <div class="pair">
+      <figure class="screen">
+        <img src="images/ts-create.png" alt="Create a new collection sheet with helper text Add stays to a shoppable list">
+        <figcaption>Create. The helper line does the naming work: this is a shoppable list, not a trip.</figcaption>
+      </figure>
+      <figure class="screen">
+        <img src="images/ts-error-max-name.png" alt="Collection name field showing error Collection name has a max of 32 characters">
+        <figcaption>Name the constraint. Not “Invalid input.”</figcaption>
+      </figure>
+    </div>
 
     <h2>Errors that say what happened</h2>
     <table>
@@ -50,15 +62,22 @@
 
     <h2>High-stakes confirms</h2>
     <p>Changing a public collection to Only you breaks the Shop and every shared link. The confirm has to say that before they tap.</p>
+    <div class="pair">
+      <figure class="screen">
+        <img src="images/ts-confirm-visibility.png" alt="Confirm dialog: setting visibility to Only you will hide the collection on the Travel Shop and break shared links">
+        <figcaption>Visibility. Say what breaks before they confirm.</figcaption>
+      </figure>
+      <figure class="screen">
+        <img src="images/ts-confirm-delete.png" alt="Delete dialog: collection links will stop working, individual property links will still work">
+        <figcaption>Delete. The second sentence is the design: what survives.</figcaption>
+      </figure>
+    </div>
     <blockquote>Are you sure you want to set the visibility to ‘Only you’? This collection won’t be visible on your Travel Shop and links to this collection will no longer work.</blockquote>
     <blockquote>Delete Destinations I Adore and all 14 properties? Links to this collection will no longer work. Links you shared to individual properties will still work.</blockquote>
     <p>The second sentence is the design: people need to know what survives. “This can’t be undone” is not enough.</p>
 
-    <h2>What this shows</h2>
-    <p>Product UI for a two-sided travel experience. Systems: one vocabulary, many states. Judgment: when to be short, when to explain the consequence.</p>
-
     <footer>
-      <a href="../index.html">Home</a>
+      <a href="index.html">Home</a>
     </footer>
   </div>
 </body>
